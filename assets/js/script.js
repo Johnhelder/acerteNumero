@@ -1,7 +1,14 @@
-let calcNumber;
+let computerNumber;
+let userNumbers = [];
 
 function init(){
-  calcNumber = Math.floor(Math.random() * 100 + 1);
+  computerNumber = Math.floor(Math.random() * 100 + 1);
 
-  console.log(calcNumber);
+  console.log(computerNumber);
+}
+
+function compareNumbers(){
+ const userNumber = Number(document.getElementById('inputBox').value);
+ userNumbers.push(userNumber);
+ document.getElementById('guesses').innerHTML = userNumber;
 }
