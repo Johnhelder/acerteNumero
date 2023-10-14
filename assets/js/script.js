@@ -9,6 +9,14 @@ function init(){
 
 function compareNumbers(){
  const userNumber = Number(document.getElementById('inputBox').value);
- userNumbers.push(userNumber);
+ userNumbers.push(' ' + userNumber);
  document.getElementById('guesses').innerHTML = userNumber;
+
+ if(userNumber > computerNumber){ 
+  document.getElementById('textOutput').innerHTML = 'seu número é muito alto';
+ }else if(userNumber < computerNumber){
+  document.getElementById('textOutput').innerHTML = 'seu número é muito baixo'
+ }else{
+  document.getElementById('textOutput').innerHTML = 'parabéns';
+ }
 }
