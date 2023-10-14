@@ -1,5 +1,6 @@
 let computerNumber;
 let userNumbers = [];
+let attempts = 0;
 
 function init(){
   computerNumber = Math.floor(Math.random() * 100 + 1);
@@ -15,10 +16,16 @@ function compareNumbers(){
  if(userNumber > computerNumber){ 
   document.getElementById('textOutput').innerHTML = 'seu número é muito alto';
   document.getElementById('inputBox').value = '';
+  attempts++;
+  document.getElementById('attempts').innerHTML = attempts;
  }else if(userNumber < computerNumber){
   document.getElementById('textOutput').innerHTML = 'seu número é muito baixo'
   document.getElementById('inputBox').value = '';
+  attempts++;
+  document.getElementById('attempts').innerHTML = attempts;
  }else{
   document.getElementById('textOutput').innerHTML = 'você acertou parabéns';
+  attempts++;
+  document.getElementById('attempts').innerHTML = attempts;
  }
 }
