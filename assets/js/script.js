@@ -10,13 +10,15 @@ function init(){
 function compareNumbers(){
  const userNumber = Number(document.getElementById('inputBox').value);
  userNumbers.push(' ' + userNumber);
- document.getElementById('guesses').innerHTML = userNumber;
+ document.getElementById('guesses').innerHTML = userNumbers;
 
  if(userNumber > computerNumber){ 
   document.getElementById('textOutput').innerHTML = 'seu número é muito alto';
+  document.getElementById('inputBox').value = '';
  }else if(userNumber < computerNumber){
   document.getElementById('textOutput').innerHTML = 'seu número é muito baixo'
+  document.getElementById('inputBox').value = '';
  }else{
-  document.getElementById('textOutput').innerHTML = 'parabéns';
+  document.getElementById('textOutput').innerHTML = 'você acertou parabéns';
  }
 }
