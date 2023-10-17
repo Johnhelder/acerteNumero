@@ -3,6 +3,10 @@ let userNumbers = [];
 let attempts = 0;
 let maxguesses = 10;
 
+function newGame(){
+  window.location.reload();
+}
+
 
 
 function init(){
