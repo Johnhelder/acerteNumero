@@ -4,6 +4,7 @@
     --background: #fafafa;
     --gradient-1: #343e63;
     --gradient-2: #2a3352;
+    --roxo:  #23FC4A;
   }
   
   html {
@@ -21,7 +22,7 @@
   main {
     text-align: center;
     background: var(--background);
-    border: solid var(--red);
+    border: solid var(--roxo);
     border-width: 8px 8px 8px 8px;
     min-height: 40vh;
     border-radius: 2rem 2rem 2rem 2rem;
@@ -51,10 +52,16 @@
     border-radius: 1rem 1rem 0 0;
     font-size: 1.4rem;
   }
+
+  .btn{
+    font-size: 2em; 
+  }
   
   button:last-child {
-    background: var(--red);
+    background: var(--roxo);
     border-radius: 0 0 1rem 1rem;
+    color: #000;
+    font-weight: 600;
   }
 
   /* game screen */
