@@ -31,12 +31,15 @@
   }
   
   h2 {
-    font-size: 3.2rem;
+    font-size: 2.3rem;
     margin: 2rem 2rem 2rem 2rem;
+    text-transform: uppercase;
   }
   
   p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 
   .button-wrapper {
@@ -55,6 +58,11 @@
 
   .btn{
     font-size: 2em; 
+    border-radius: 8px !important;
+  }
+
+  #newGameButton{
+    border-radius: 8px;
   }
   
   button:last-child {
@@ -67,7 +75,8 @@
   /* game screen */
   
   h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
   }
   
   input {
@@ -78,6 +87,7 @@
     width: 25rem;
     text-align: center;
     font-size: 2rem;
+    border-radius: 7px;
   }
 
   .stats {
