@@ -66,6 +66,10 @@
     font-size: 1.8em;
   }
 
+input[type="number"]{
+   border-color: #0AFF85;
+  }
+
   #newGameButton{
     border-radius: 8px;
   }
