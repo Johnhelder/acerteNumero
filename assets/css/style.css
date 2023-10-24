@@ -121,4 +121,12 @@ input[type="number"]{
     body {
       width: 60vw;
     }
+    
+    
+  }
+
+  @media (max-width: 445px) {
+      bottom{
+        font-size: 16px;
+      }
   }
