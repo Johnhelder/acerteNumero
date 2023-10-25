@@ -125,8 +125,10 @@ input[type="number"]{
     
   }
 
-  @media (max-width: 445px) {
-      bottom{
+  @media (max-width: 447px) {
+    #newGameButton{  
+        background-color: #0AFF85;      
         font-size: 16px;
       }
+       
   }
