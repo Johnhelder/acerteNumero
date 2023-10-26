@@ -132,3 +132,12 @@ input[type="number"]{
       }
        
   }
+
+  @media (max-width: 393px) {
+    #newGameButton{  
+        background-color: #0AFF85;      
+        font-size: 13px;
+        
+      }
+       
+  }
